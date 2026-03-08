@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartHydrate</title>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#00aaff">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+
+    <h1>💧 SmartHydrate</h1>
+    <p class="subtitle">Stay Healthy Arshiii❤️</p>
+
+    <p id="weather"></p>
+
+    <h3>Daily Goal: 8 Glasses</h3>
+
+    <div class="progress">
+        <div id="progressBar"></div>
+    </div>
+
+    <p id="count">0 / 8</p>
+
+    <button onclick="drinkWater()"> Drink Water</button>
+    <button onclick="resetDay()">Reset Today</button>
+    <div id="waterDrops" class="water-drops"></div>
+
+    <h3>Weekly History</h3>
+    <div id="history"></div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
